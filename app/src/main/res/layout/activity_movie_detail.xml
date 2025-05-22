@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94A63333"
+    android:padding="16dp">
+
+    <!-- Movie Banner -->
+    <ImageView
+        android:id="@+id/imgMovieBanner"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spiderman_banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/tvMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#CAC6C6"
+        android:text="The Amazing Spider-Man (2012)"
+        android:textColor="#090909"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgMovieBanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Full Description -->
+    <TextView
+        android:id="@+id/tvFullDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#CAC6C6"
+        android:padding="12dp"
+        android:text="After Peter Parker is bitten by a genetically altered spider, he gains newfound spider-like powers and ventures out to solve the mystery of his parents' disappearance. Meanwhile, he must face Dr. Curt Connors, his father's former partner who becomes the powerful Lizard."
+        android:textColor="#141313"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- CAST Label -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#ABA1A1"
+        android:text="CAST"
+        android:textColor="#070707"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvFullDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cast List -->
+    <TextView
+        android:id="@+id/tvCast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#CAC6C6"
+        android:padding="12dp"
+        android:text="• Andrew Garfield as Peter Parker / Spider-Man\n• Emma Stone as Gwen Stacy\n• Rhys Ifans as Dr. Curt Connors / Lizard\n• Denis Leary as Captain Stacy\n• Martin Sheen as Uncle Ben\n• Sally Field as Aunt May"
+        android:textColor="#161515"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
